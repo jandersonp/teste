@@ -1,9 +1,9 @@
 import { Router } from 'express';
 
+import AlunoController from './app/controllers/AlunoController';
+
 const routes = new Router();
 
-routes.get('/', (req, res) => {
-  return res.json({ message: 'Hello World' });
-});
+routes.get('/alunos', AlunoController.store);
 
 export default routes;

@@ -1,3 +1,4 @@
+/** Objeto de cofiguração da minha base de dados */
 module.exports = {
   dialect: 'postgres',
   host: 'localhost',
