@@ -10,14 +10,14 @@ module.exports = {
       aluno_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: { model: 'Aluno', key: 'id' },
+        references: { model: 'alunos', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
       },
       professor_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: { model: 'Professor', key: 'id' },
+        references: { model: 'professores', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
       },
@@ -29,11 +29,11 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      dataAbertura: {
+      data_abertura: {
         type: Sequelize.DATE,
         allowNull: false,
       },
-      dataEncerramento: {
+      data_encerramento: {
         type: Sequelize.DATE,
         allowNull: false,
       },

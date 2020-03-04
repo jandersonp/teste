@@ -6,8 +6,8 @@ class Turma extends Model {
       {
         codigo: Sequelize.STRING,
         sala: Sequelize.STRING,
-        dataAbertura: Sequelize.DATE,
-        dataEncerramento: Sequelize.DATE,
+        data_abertura: Sequelize.DATE,
+        data_encerramento: Sequelize.DATE,
       },
       {
         sequelize,
