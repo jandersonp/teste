@@ -9,7 +9,9 @@ class Turma extends Model {
         dataAbertura: Sequelize.DATE,
         dataEncerramento: Sequelize.DATE,
       },
-      { sequelize }
+      {
+        sequelize,
+      }
     );
   }
 

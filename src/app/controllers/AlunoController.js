@@ -21,11 +21,16 @@ class AlunoController {
 
   /** Listagem de Alunos */
   async index(req, res) {
-    const users = await Aluno.findAll({
-      where: {},
-    });
+    const listAluno = await Aluno.findAll();
 
-    return res.json(users);
+    return res.json({ listAluno });
+  }
+
+  /** Editar Aluno */
+  async update(req, res) {
+    const { nome, matricula } = req.body;
+
+    const aluno = await Aluno.findByPk(req.alunoId);
   }
 }
 

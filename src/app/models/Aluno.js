@@ -13,5 +13,4 @@ class Aluno extends Model {
     );
   }
 }
-
 export default Aluno;

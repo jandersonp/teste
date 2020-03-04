@@ -10,7 +10,7 @@ class TurmaController {
       sala,
       dataAbertura,
       dataEncerramento,
-      professor_id,
+      professores_id,
     } = req.body;
 
     const aluno = await Aluno.findByPk(aluno_id);
@@ -25,7 +25,7 @@ class TurmaController {
       dataAbertura,
       dataEncerramento,
       aluno_id,
-      professor_id,
+      professores_id,
     });
 
     return res.json(turma);

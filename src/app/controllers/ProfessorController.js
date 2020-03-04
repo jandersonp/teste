@@ -18,6 +18,13 @@ class ProfessorController {
 
     return res.json({ id, nome, titulacao });
   }
+
+  /** Listagem de professores */
+  async index(req, res) {
+    const listProfessor = await Professor.findAll();
+
+    return res.json({ listProfessor });
+  }
 }
 
 export default new ProfessorController();

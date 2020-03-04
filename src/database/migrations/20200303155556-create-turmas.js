@@ -10,14 +10,14 @@ module.exports = {
       aluno_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: { model: 'alunos', key: 'id' },
+        references: { model: 'Aluno', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
       },
       professor_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: { model: 'professores', key: 'id' },
+        references: { model: 'Professor', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
       },
